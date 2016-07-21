@@ -1,0 +1,49 @@
+<templateSet group="Plates">
+  <template name="e" value="&lt;?=$this-&gt;e($VALUE$)?&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="insert" value="&lt;?php $this-&gt;insert('$TEMPLATE$'$ARGS$) ?&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fetch" value="&lt;?=$this-&gt;fetch('$TEMPLATE$'$ARGS$)?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="layout" value="&lt;?php $this-&gt;layout('$TEMPLATE$'$ARGS$) ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="section" value="&lt;?=$this-&gt;section('$TEMPLATE$'$ARGS$)?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ss" value="&lt;?php $this-&gt;start('$NAME$') ?&gt;&#10;    $END$&#10;&lt;?php $this-&gt;stop() ?&gt;" description="start/stop" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="batch" value="&lt;?=$this-&gt;batch($VALUE$, '$FUNCTIONS$')?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
