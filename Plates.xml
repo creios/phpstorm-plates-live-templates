@@ -46,4 +46,50 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="/**" value="&lt;?php /** @var $TYPE$ $VARIABLE$ */ ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="/*" value="&lt;?php /* $COMMENT$ */ ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="COMMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="endfore" value="&lt;?php endforeach ?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="endif" value="&lt;?php endif ?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="fore" value="&lt;?php foreach ($ITERABLE$): ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="&lt;?php if ($PREDICATE$): ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="PREDICATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="else" value="&lt;?php else: ?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="elseif" value="&lt;?php elseif ($PREDICATE$): ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="PREDICATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
